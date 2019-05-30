@@ -777,6 +777,11 @@ def ping():
     return 'OK'
 
 
+@app.route('/status.html')
+def status():
+    return 'OK'
+
+
 class KV(BaseSupersetView):
 
     """Used for storing and retrieving key value pairs"""

@@ -350,6 +350,8 @@ class CoreTests(SupersetTestCase):
         assert self.get_resp('/health') == 'OK'
         assert self.get_resp('/healthcheck') == 'OK'
         assert self.get_resp('/ping') == 'OK'
+        assert self.get_resp('/status') == 'OK'
+        
 
     def test_testconn(self, username='admin'):
         self.login(username=username)
